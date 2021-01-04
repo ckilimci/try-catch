@@ -22,3 +22,16 @@ paths:
                 type: array
                 items: 
                   type: string
+  /ids:
+    get:
+      summary: Returns a list of IDs.
+      description: Optional extended description in CommonMark or HTML.
+      responses:
+        '200':    # status code
+          description: A JSON array of IDs
+          content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  type: string
